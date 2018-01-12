@@ -7,10 +7,8 @@ export class DashboardService {
 
   constructor(private http: HttpClient) { }
 
-  getReporting() {
-    return this.http.get('/api/items').subscribe(data => {
-      this.results = data['results'];
-    });
+  getComments() {
+    return this.http.get('https://jsonplaceholder.typicode.com/comments');
   }
 
 

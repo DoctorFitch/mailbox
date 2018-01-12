@@ -5,6 +5,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { DashboardService } from './dashboard/dashboard.service';
+
+// chart.js
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -13,12 +17,10 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    ChartsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent],
-  export: [
-    DashboardComponent
-  ]
+  providers: [DashboardService],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

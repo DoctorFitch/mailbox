@@ -1,1 +1,89 @@
+<div class="row">
+  <div class="col s12">
+    <div class="card">
+      <div class="card-content blue-grey darken-1">
+        <p class="card-stats-title">
+          <i class="mdi-editor-insert-drive-file"></i> New Invoice</p>
+        <h4 class="card-stats-number">1806</h4>
+        <p class="card-stats-compare">
+          <i class="mdi-hardware-keyboard-arrow-down"></i> 3%
+          <span class="deep-purple-text text-lighten-5">from last month</span>
+        </p>
+      </div>
 
+      <div class="card-action">
+        <div id="invoice-line">
+          <!-- <canvas width="418" height="25" style="display: inline-block; width: 418px; height: 25px; vertical-align: top;"></canvas> -->
+          <canvas baseChart width="418" height="50" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content blue-grey darken-1">
+        <p class="card-stats-title">
+          <i class="mdi-editor-insert-drive-file"></i> New Invoice</p>
+        <h4 class="card-stats-number">1806</h4>
+        <p class="card-stats-compare">
+          <i class="mdi-hardware-keyboard-arrow-down"></i> 3%
+          <span class="deep-purple-text text-lighten-5">from last month</span>
+        </p>
+      </div>
+
+      <div class="card-action">
+        <div id="invoice-line">
+          <!-- <canvas width="418" height="25" style="display: inline-block; width: 418px; height: 25px; vertical-align: top;"></canvas> -->
+          <canvas baseChart width="418" height="200" [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions"
+            [legend]="barChartLegend" [chartType]="barChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col s6">
+    <div class="card">
+      <div class="card-content blue-grey darken-1">
+        <p class="card-stats-title">
+          <i class="mdi-editor-insert-drive-file"></i>Couriers reçus</p>
+        <h4 class="card-stats-number">14</h4>
+      </div>
+
+      <ul class="collection">
+        <li class="collection-item avatar">
+          <i class="material-icons circle grey">markunread</i>
+          <span class="title">Courrier 1</span>
+          <p>01/01/2018
+            <br> 0.156g
+          </p>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle">delete_forever</i>
+          <span class="title">Courrier 2</span>
+          <p>01/01/2018
+            <br> 0.346g
+          </p>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle grey">redeem</i>
+          <span class="title">Courrier 3</span>
+          <p>01/01/2018
+            <br> 1.185kg
+          </p>
+        </li>
+        <li class="collection-item avatar">
+          <i class="material-icons circle grey">markunread</i>
+          <span class="title">Courrier 4</span>
+          <p>01/01/2018
+            <br> 0.47g
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
